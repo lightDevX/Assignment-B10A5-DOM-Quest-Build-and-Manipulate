@@ -8,198 +8,186 @@
   </head>
   <body>
     <main>
-      <!-- header part -->
       <header class="bg-[#F9F7F3]">
-        <div class="container mx-auto">
+        <div class="container mx-auto px-4">
           <div
             class="flex flex-col items-center justify-between p-6 gap-5 md:flex-row md:items-center md:justify-between md:pt-6 md:pb-16">
-            <button class="bg-primary px-8 py-3 rounded-[8px]">Blog</button>
-            <div
-              class="flex items-center justify-center md:items-center md:justify-end md:w-full md:h-full">
+            <button class="bg-primary px-6 py-3 rounded-[8px]">Blog</button>
+            <div class="flex items-center justify-center md:justify-start">
               <a href="/">
-                <img src="./assets/media/logo.png" alt="" class="w-12 h-12" />
+                <img
+                  src="./assets/media/logo.png"
+                  alt="logo"
+                  class="w-10 h-10 sm:w-12 sm:h-12" />
               </a>
               <p
-                class="ml-3 md:ml-4 font-normal font-lexend text-2xl text-[#111111]">
+                class="ml-3 md:ml-4 font-normal font-lexend text-xl sm:text-2xl text-[#111111]">
                 Donate Bangladesh
               </p>
             </div>
-            <div
-              class="flex items-center justify-center md:justify-end w-full h-full">
-              <div class="mr-2">
-                <img
-                  src="./assets/media/coin.png"
-                  alt="coins"
-                  class="w-full h-full" />
-              </div>
-              <div><span>5000</span>BDT</div>
+            <div class="flex items-center justify-center md:justify-end">
+              <img
+                src="./assets/media/coin.png"
+                alt="coins"
+                class="w-6 h-6 md:w-8 md:h-8" />
+              <div class="ml-2"><span>5000</span>BDT</div>
             </div>
           </div>
         </div>
       </header>
-      <!-- header part end -->
-      <!-- button part -->
+
       <div
-        class="flex justify-center items-center gap-4 mt-20 text-black text-xl font-normal font-lexend">
-        <button class="bg-primary px-8 py-4 rounded-[8px]">Donation</button>
-        <button class="outline outline-[#111111]/30 px-8 py-4 rounded-[8px]">
+        class="flex flex-wrap justify-center items-center gap-4 mt-10 md:mt-20 text-black text-lg sm:text-xl font-normal font-lexend">
+        <button class="bg-primary px-6 py-3 sm:px-8 sm:py-4 rounded-[8px]">
+          Donation
+        </button>
+        <button
+          class="outline outline-[#111111]/30 px-6 py-3 sm:px-8 sm:py-4 rounded-[8px]">
           History
         </button>
       </div>
-      <!-- button part end -->
-      <!-- card part -->
-      <section class="container mx-auto">
+
+      <section class="container mx-auto px-4">
         <div class="outline outline-[#111111]/10 rounded-2xl shadow-xl mt-8">
-          <div class="p-8 flex flex-col md:flex-row gap-8">
+          <div class="p-6 sm:p-8 flex flex-col md:flex-row gap-6 md:gap-8">
             <div class="w-full md:w-1/2 h-auto">
               <img
                 src="./assets/media/noakhali.png"
-                alt=""
-                class="w-full h-full" />
+                alt="Flood Relief"
+                class="w-full h-full object-cover rounded-lg" />
             </div>
             <div
-              class="w-full md:w-1/2 h-auto flex flex-col justify-evenly gap-6">
+              class="w-full md:w-1/2 h-auto flex flex-col justify-evenly gap-4">
               <div
-                class="flex items-center gap-2 font-normal font-lexend text-xl text-[#111111]/70 bg-[#111111]/5 rounded-md px-4 py-2 w-[fit-content]">
-                <div class="w-6 h-6">
-                  <img
-                    src="./assets/media/coin.png"
-                    alt="coins"
-                    class="w-full h-full" />
-                </div>
+                class="flex items-center gap-2 font-normal font-lexend text-lg sm:text-xl text-[#111111]/70 bg-[#111111]/5 rounded-md px-4 py-2 w-fit">
+                <img
+                  src="./assets/media/coin.png"
+                  alt="coins"
+                  class="w-5 h-5 sm:w-6 sm:h-6" />
                 <div><span>0000</span>BDT</div>
               </div>
-              <h1 class="text-black text-xl font-normal font-lexend">
+              <h1 class="text-black text-lg sm:text-xl font-normal font-lexend">
                 Donate for Flood at Noakhali, Bangladesh
               </h1>
-              <p class="text-[#111111]/70 font-normal font-lexend">
+              <p
+                class="text-[#111111]/70 font-normal font-lexend text-sm sm:text-base">
                 The recent floods in Noakhali have caused significant damage to
-                homes infrastructure. Your donation will help provide essential
-                supplies and to those affected by this disaster. Every
-                contribution, big or small, makes difference. Please join us in
-                supporting the relief efforts and making a positive impact on
-                the lives of those in need.
+                homes and infrastructure. Your donation will help provide
+                essential supplies to those affected by this disaster.
               </p>
-              <div
-                class="w-full h-auto text-base text-[#111111]/40 font-normal font-lexend">
-                <input
-                  type="text"
-                  placeholder="Write Donation Amount"
-                  class="outline outline-[#111111]/30 rounded-[8px] w-full h-20 px-5" />
-              </div>
+              <input
+                type="text"
+                placeholder="Write Donation Amount"
+                class="outline outline-[#111111]/30 rounded-[8px] w-full h-12 sm:h-16 px-4" />
               <button
-                class="bg-primary px-8 py-4 rounded-[8px] text-black text-xl font-normal font-lexend">
+                class="bg-primary px-6 py-3 sm:px-8 sm:py-4 rounded-[8px] text-black text-lg sm:text-xl font-normal font-lexend">
                 Donate Now
               </button>
             </div>
           </div>
         </div>
       </section>
-      <!-- card part end -->
-      <!-- card part -->
-      <section class="container mx-auto">
+
+      <section class="container mx-auto px-4">
         <div class="outline outline-[#111111]/10 rounded-2xl shadow-xl mt-8">
-          <div class="p-8 flex flex-col md:flex-row gap-8">
+          <div class="p-6 sm:p-8 flex flex-col md:flex-row gap-6 md:gap-8">
             <div class="w-full md:w-1/2 h-auto">
               <img
-                src="./assets/media/noakhali.png"
-                alt=""
-                class="w-full h-full" />
+                src="./assets/media/feni.png"
+                alt="Flood Relief"
+                class="w-full h-full object-cover rounded-lg" />
             </div>
             <div
-              class="w-full md:w-1/2 h-auto flex flex-col justify-evenly gap-6">
+              class="w-full md:w-1/2 h-auto flex flex-col justify-evenly gap-4">
               <div
-                class="flex items-center gap-2 font-normal font-lexend text-xl text-[#111111]/70 bg-[#111111]/5 rounded-md px-4 py-2 w-[fit-content]">
-                <div class="w-6 h-6">
-                  <img
-                    src="./assets/media/coin.png"
-                    alt="coins"
-                    class="w-full h-full" />
-                </div>
+                class="flex items-center gap-2 font-normal font-lexend text-lg sm:text-xl text-[#111111]/70 bg-[#111111]/5 rounded-md px-4 py-2 w-fit">
+                <img
+                  src="./assets/media/coin.png"
+                  alt="coins"
+                  class="w-5 h-5 sm:w-6 sm:h-6" />
                 <div><span>0000</span>BDT</div>
               </div>
-              <h1 class="text-black text-xl font-normal font-lexend">
-                Donate for Flood at Noakhali, Bangladesh
+              <h1 class="text-black text-lg sm:text-xl font-normal font-lexend">
+                Donate for Flood Relief in Feni,Bangladesh
               </h1>
-              <p class="text-[#111111]/70 font-normal font-lexend">
-                The recent floods in Noakhali have caused significant damage to
-                homes infrastructure. Your donation will help provide essential
-                supplies and to those affected by this disaster. Every
-                contribution, big or small, makes difference. Please join us in
-                supporting the relief efforts and making a positive impact on
-                the lives of those in need.
+              <p
+                class="text-[#111111]/70 font-normal font-lexend text-sm sm:text-base">
+                The recent floods in Feni have devastated local communities,
+                leading to severe disruption and loss. Your generous donation
+                will help provide immediate aid, including food, clean water,
+                and medical supplies, to those affected by this calamity.
+                Together, we can offer crucial support and help rebuild lives in
+                the aftermath of this disaster. Every contribution counts
+                towards making a real difference. Please consider donating today
+                to assist those in urgent need.
               </p>
-              <div
-                class="w-full h-auto text-base text-[#111111]/40 font-normal font-lexend">
-                <input
-                  type="text"
-                  placeholder="Write Donation Amount"
-                  class="outline outline-[#111111]/30 rounded-[8px] w-full h-20 px-5" />
-              </div>
+              <input
+                type="text"
+                placeholder="Write Donation Amount"
+                class="outline outline-[#111111]/30 rounded-[8px] w-full h-12 sm:h-16 px-4" />
               <button
-                class="bg-primary px-8 py-4 rounded-[8px] text-black text-xl font-normal font-lexend">
+                class="bg-primary px-6 py-3 sm:px-8 sm:py-4 rounded-[8px] text-black text-lg sm:text-xl font-normal font-lexend">
                 Donate Now
               </button>
             </div>
           </div>
         </div>
       </section>
-      <!-- card part end -->
-      <!-- card part -->
-      <section class="container mx-auto">
+
+      <section class="container mx-auto px-4">
         <div class="outline outline-[#111111]/10 rounded-2xl shadow-xl mt-8">
-          <div class="p-8 flex flex-col md:flex-row gap-8">
+          <div class="p-6 sm:p-8 flex flex-col md:flex-row gap-6 md:gap-8">
             <div class="w-full md:w-1/2 h-auto">
               <img
-                src="./assets/media/noakhali.png"
-                alt=""
-                class="w-full h-full" />
+                src="./assets/media/quota-protest.png"
+                alt="Flood Relief"
+                class="w-full h-full object-cover rounded-lg" />
             </div>
             <div
-              class="w-full md:w-1/2 h-auto flex flex-col justify-evenly gap-6">
+              class="w-full md:w-1/2 h-auto flex flex-col justify-evenly gap-4">
               <div
-                class="flex items-center gap-2 font-normal font-lexend text-xl text-[#111111]/70 bg-[#111111]/5 rounded-md px-4 py-2 w-[fit-content]">
-                <div class="w-6 h-6">
-                  <img
-                    src="./assets/media/coin.png"
-                    alt="coins"
-                    class="w-full h-full" />
-                </div>
+                class="flex items-center gap-2 font-normal font-lexend text-lg sm:text-xl text-[#111111]/70 bg-[#111111]/5 rounded-md px-4 py-2 w-fit">
+                <img
+                  src="./assets/media/coin.png"
+                  alt="coins"
+                  class="w-5 h-5 sm:w-6 sm:h-6" />
                 <div><span>0000</span>BDT</div>
               </div>
-              <h1 class="text-black text-xl font-normal font-lexend">
-                Donate for Flood at Noakhali, Bangladesh
+              <h1 class="text-black text-lg sm:text-xl font-normal font-lexend">
+                Aid for Injured in the Quota Movement
               </h1>
-              <p class="text-[#111111]/70 font-normal font-lexend">
-                The recent floods in Noakhali have caused significant damage to
-                homes infrastructure. Your donation will help provide essential
-                supplies and to those affected by this disaster. Every
-                contribution, big or small, makes difference. Please join us in
-                supporting the relief efforts and making a positive impact on
-                the lives of those in need.
+              <p
+                class="text-[#111111]/70 font-normal font-lexend text-sm sm:text-base">
+                The recent Quota movement has resulted in numerous injuries and
+                significant hardship for many individuals. Your support is
+                crucial in providing medical assistance, rehabilitation, and
+                necessary supplies to those affected. By contributing, you help
+                ensure that injured individuals receive the care and support
+                they need during this challenging time. Every donation plays a
+                vital role in alleviating their suffering and aiding in their
+                recovery. Please consider making a donation to support these
+                brave individuals in their time of need.
               </p>
-              <div
-                class="w-full h-auto text-base text-[#111111]/40 font-normal font-lexend">
-                <input
-                  type="text"
-                  placeholder="Write Donation Amount"
-                  class="outline outline-[#111111]/30 rounded-[8px] w-full h-20 px-5" />
-              </div>
+              <input
+                type="text"
+                placeholder="Write Donation Amount"
+                class="outline outline-[#111111]/30 rounded-[8px] w-full h-12 sm:h-16 px-4" />
               <button
-                class="bg-primary px-8 py-4 rounded-[8px] text-black text-xl font-normal font-lexend">
+                class="bg-primary px-6 py-3 sm:px-8 sm:py-4 rounded-[8px] text-black text-lg sm:text-xl font-normal font-lexend">
                 Donate Now
               </button>
             </div>
           </div>
         </div>
       </section>
-      <!-- card part end -->
-      <!-- footer part -->
+
       <footer class="bg-[#F9F7F3]">
         <p class="mt-16 py-5 text-center font-lexend font-extrabold">
           Developed by Hasan U Khan
         </p>
       </footer>
     </main>
+
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
