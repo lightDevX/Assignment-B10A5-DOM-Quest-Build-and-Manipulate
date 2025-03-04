@@ -30,7 +30,7 @@
                 src="./assets/media/coin.png"
                 alt="coins"
                 class="w-6 h-6 md:w-8 md:h-8" />
-              <div class="ml-2"><span>5000</span>BDT</div>
+              <div class="ml-2"><span id="main-balance">500000</span>BDT</div>
             </div>
           </div>
         </div>
@@ -50,7 +50,7 @@
         </button>
       </div>
 
-      <section class="container mx-auto px-4" id="donate-log">
+      <section class="container mx-auto px-4">
         <div class="outline outline-[#111111]/10 rounded-2xl shadow-xl mt-8">
           <div class="p-6 sm:p-8 flex flex-col md:flex-row gap-6 md:gap-8">
             <div class="w-full md:w-1/2 h-auto">
@@ -67,7 +67,7 @@
                   src="./assets/media/coin.png"
                   alt="coins"
                   class="w-5 h-5 sm:w-6 sm:h-6" />
-                <div><span>0000</span>BDT</div>
+                <div><span id="donate-balance">0</span>BDT</div>
               </div>
               <h1 class="text-black text-lg sm:text-xl font-normal font-lexend">
                 Donate for Flood at Noakhali, Bangladesh
@@ -79,17 +79,19 @@
                 essential supplies to those affected by this disaster.
               </p>
               <input
+                id="donate-amount"
                 type="text"
                 placeholder="Write Donation Amount"
                 class="outline outline-[#111111]/30 rounded-[8px] w-full h-12 sm:h-16 px-4" />
               <button
+                id="btn-donate"
                 class="bg-primary px-6 py-3 sm:px-8 sm:py-4 rounded-[8px] text-black text-lg sm:text-xl font-normal font-lexend">
                 Donate Now
               </button>
             </div>
           </div>
         </div>
-        <div class="outline outline-[#111111]/10 rounded-2xl shadow-xl mt-8">
+        <!-- <div class="outline outline-[#111111]/10 rounded-2xl shadow-xl mt-8">
           <div class="p-6 sm:p-8 flex flex-col md:flex-row gap-6 md:gap-8">
             <div class="w-full md:w-1/2 h-auto">
               <img
@@ -105,7 +107,7 @@
                   src="./assets/media/coin.png"
                   alt="coins"
                   class="w-5 h-5 sm:w-6 sm:h-6" />
-                <div><span>0000</span>BDT</div>
+                <div><span id="donate-balance-1">0</span>BDT</div>
               </div>
               <h1 class="text-black text-lg sm:text-xl font-normal font-lexend">
                 Donate for Flood Relief in Feni,Bangladesh
@@ -122,17 +124,19 @@
                 to assist those in urgent need.
               </p>
               <input
+                id="donate-amount-1"
                 type="text"
                 placeholder="Write Donation Amount"
                 class="outline outline-[#111111]/30 rounded-[8px] w-full h-12 sm:h-16 px-4" />
               <button
+                id="btn-donate-1"
                 class="bg-primary px-6 py-3 sm:px-8 sm:py-4 rounded-[8px] text-black text-lg sm:text-xl font-normal font-lexend">
                 Donate Now
               </button>
             </div>
           </div>
-        </div>
-        <div class="outline outline-[#111111]/10 rounded-2xl shadow-xl mt-8">
+        </div> -->
+        <!-- <div class="outline outline-[#111111]/10 rounded-2xl shadow-xl mt-8">
           <div class="p-6 sm:p-8 flex flex-col md:flex-row gap-6 md:gap-8">
             <div class="w-full md:w-1/2 h-auto">
               <img
@@ -148,7 +152,7 @@
                   src="./assets/media/coin.png"
                   alt="coins"
                   class="w-5 h-5 sm:w-6 sm:h-6" />
-                <div><span>0000</span>BDT</div>
+                <div><span id="donate-balance-2">0</span>BDT</div>
               </div>
               <h1 class="text-black text-lg sm:text-xl font-normal font-lexend">
                 Aid for Injured in the Quota Movement
@@ -166,14 +170,29 @@
                 brave individuals in their time of need.
               </p>
               <input
+                id="donate-amount-2"
                 type="text"
                 placeholder="Write Donation Amount"
                 class="outline outline-[#111111]/30 rounded-[8px] w-full h-12 sm:h-16 px-4" />
               <button
+                id="btn-donate-2"
                 class="bg-primary px-6 py-3 sm:px-8 sm:py-4 rounded-[8px] text-black text-lg sm:text-xl font-normal font-lexend">
                 Donate Now
               </button>
             </div>
+          </div>
+        </div> -->
+      </section>
+
+      <section class="hidden" id="success-modal">
+        <div
+          class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+          <div class="bg-white p-8 rounded-lg">
+            <h2 class="text-xl font-bold mb-4">Donation Successful!</h2>
+            <p>Thank you for your donation.</p>
+            <button id="close-modal" class="mt-4 bg-primary px-4 py-2 rounded">
+              Close
+            </button>
           </div>
         </div>
       </section>
@@ -187,5 +206,6 @@
 
     <script src="./assets/js/main.js"></script>
     <script src="./assets/js/donateInfo.js"></script>
+    <script src="./assets/js/utils/utilities.js"></script>
   </body>
 </html>
